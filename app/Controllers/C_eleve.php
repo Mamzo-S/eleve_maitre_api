@@ -40,7 +40,7 @@ class C_eleve extends BaseController
             return $this->response->setJSON([
                 'status' => 'error',
                 'message' => 'Identifiants invalides'
-            ])->setStatusCode(401);
+            ]);
         }
     }
 
