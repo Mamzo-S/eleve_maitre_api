@@ -43,7 +43,7 @@ class C_choix extends BaseController
     {
         $choix_model = new M_choix();
 
-        $choix = $choix_model
+        $choix = $choix_model   
             ->where('id_eleve', $id_eleve)
             ->orderBy('rang', 'ASC')
             ->findAll();

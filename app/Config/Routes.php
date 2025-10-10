@@ -12,4 +12,4 @@ $routes->post('api/logout', 'C_eleve::logout');
 $routes->post('api/choix', 'C_choix::saveChoices');
 $routes->get('api/choix/(:num)', 'C_choix::getChoicesByEleve/$1');
 
-// $routes->get('api/users', 'C_eleve::listUser');
+$routes->get('api/users', 'C_eleve::listUser');

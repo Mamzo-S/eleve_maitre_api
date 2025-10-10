@@ -9,13 +9,12 @@ use CodeIgniter\Debug\Toolbar\Collectors\BaseCollector;
 class C_eleve extends BaseController
 {
 
-    // public function listUser()
-    // {
-    //     $usermod = new M_eleve();
-    //     $donnee = $usermod->findAll();
-    //     // return view('base_url', $donnee);
-    //     return $this->response->setJSON($donnee);
-    // }
+    public function listUser()
+    {
+        $usermod = new M_eleve();
+        $donnee = $usermod->findAll();
+        return $this->response->setJSON($donnee);
+    }
 
     public function login()
     {
